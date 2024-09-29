@@ -64,7 +64,7 @@ void MeshRenderer::Update()
 		return;
 
 	_material->Update();
-	
+
 	auto world = GetTransform()->GetWorldMatrix();
 	RENDER->PushTransformData(TransformDesc{ world });
 

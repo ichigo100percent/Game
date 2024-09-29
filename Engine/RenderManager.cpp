@@ -23,6 +23,9 @@ void RenderManager::Init(shared_ptr<Shader> shader)
 	_materialBuffer->Create();
 	_materialEffectBuffer = _shader->GetConstantBuffer("MaterialBuffer");
 
+	_boneBuffer = make_shared<ConstantBuffer<BoneDesc>>();
+	_boneBuffer->Create();
+	_boneEffectBuffer = _shader->GetConstantBuffer("BoneBuffer");
 }
 
 void RenderManager::Update()
@@ -35,7 +38,7 @@ void RenderManager::PushGlobalData(const Matrix& view, const Matrix& projection)
 	_globalDesc.V = view;
 	_globalDesc.P = projection;
 	_globalDesc.VP = view * projection;
-	//_globalDesc.VInv = view.Invert();
+	_globalDesc.VInv = view.Invert();
 	_globalBuffer->CopyData(_globalDesc);
 	_globalEffectBuffer->SetConstantBuffer(_globalBuffer->GetComPtr().Get());
 }
@@ -59,4 +62,8 @@ void RenderManager::PushMaterialData(const MaterialDesc& desc)
 	_materialDesc = desc;
 	_materialBuffer->CopyData(_materialDesc);
 	_materialEffectBuffer->SetConstantBuffer(_materialBuffer->GetComPtr().Get());
+}
+
+void RenderManager::PushBoneData(const BoneDesc& desc)
+{
 }

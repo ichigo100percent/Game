@@ -187,9 +187,6 @@
     <FxCompile Include="..\Shaders\07. Normal.fx">
       <Filter>Shaders\Week1</Filter>
     </FxCompile>
-    <FxCompile Include="..\Shaders\00. Global.fx">
-      <Filter>Shaders\Common</Filter>
-    </FxCompile>
     <FxCompile Include="..\Shaders\08. GlobalTest.fx">
       <Filter>Shaders\Week2</Filter>
     </FxCompile>
@@ -213,6 +210,9 @@
     </FxCompile>
     <FxCompile Include="..\Shaders\14. NormalMapping.fx">
       <Filter>Shaders\Week2</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\00. Global.fx">
+      <Filter>Shaders\Common</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
