@@ -66,4 +66,7 @@ void RenderManager::PushMaterialData(const MaterialDesc& desc)
 
 void RenderManager::PushBoneData(const BoneDesc& desc)
 {
+	_boneDesc = desc;
+	_boneBuffer->CopyData(_boneDesc);
+	_boneEffectBuffer->SetConstantBuffer(_boneBuffer->GetComPtr().Get());
 }

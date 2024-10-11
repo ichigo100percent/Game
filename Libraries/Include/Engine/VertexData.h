@@ -31,3 +31,15 @@ struct VertexTextureNormalTangentData
 	Vector3 normal = { 0, 0, 0 };
 	Vector3 tangent = { 0, 0, 0 };
 };
+
+struct VertexTextureNormalTangentBlendData
+{
+	Vector3 position = { 0, 0, 0 };
+	Vector2 uv = { 0, 0 };
+	Vector3 normal = { 0, 0, 0 };
+	Vector3 tangent = { 0, 0, 0 };
+	Vector4 blendIndices = { 0, 0, 0, 0 };
+	Vector4 blendWeights = { 0, 0, 0, 0 };
+};
+
+using ModelVertexType = VertexTextureNormalTangentBlendData;

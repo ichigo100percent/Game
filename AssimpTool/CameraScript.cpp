@@ -7,7 +7,7 @@ void CameraScript::Start()
 
 void CameraScript::Update()
 {
-	float dt = TIME->GetDeltaTime();
+	float dt = TIME->GetDeltaTime() * 2.f;
 
 	Vector3 pos = GetTransform()->GetPosition();
 

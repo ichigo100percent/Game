@@ -91,6 +91,7 @@
     <FxCompile Include="..\Shaders\12. Lighting_Emissive.fx" />
     <FxCompile Include="..\Shaders\13. Lighting.fx" />
     <FxCompile Include="..\Shaders\14. NormalMapping.fx" />
+    <FxCompile Include="..\Shaders\15. Model.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

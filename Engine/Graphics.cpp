@@ -9,6 +9,7 @@ void Graphics::Init(HWND hwnd)
 	CreateRenderTargetView();
 	CreateDepthStencilView();
 	SetViewport();
+
 }
 
 void Graphics::RenderBegin()

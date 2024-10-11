@@ -214,5 +214,8 @@
     <FxCompile Include="..\Shaders\00. Global.fx">
       <Filter>Shaders\Common</Filter>
     </FxCompile>
+    <FxCompile Include="..\Shaders\15. Model.fx">
+      <Filter>Shaders\Week3</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
