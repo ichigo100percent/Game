@@ -61,13 +61,14 @@ void StaticMeshDemo::CreateTower()
 	m1->ReadMaterial(L"Ship/ship");
 
 	_obj = make_shared<GameObject>();
-	_obj->GetOrAddTransform()->SetPosition(Vector3(0, 0, 50));
-	_obj->GetOrAddTransform()->SetScale(Vector3(.1f));
+	_obj->GetOrAddTransform()->SetPosition(Vector3(0, -20, 50));
+	//_obj->GetOrAddTransform()->SetRotation(Vector3(90, 0, 0));
+	_obj->GetOrAddTransform()->SetScale(Vector3(0.05f));
 
 	_obj->AddComponent(make_shared<ModelRenderer>(_shader));
 	{
 		_obj->GetModelRenderer()->SetModel(m1);
-		_obj->GetModelRenderer()->SetPass(0);
+		//_obj->GetModelRenderer()->SetPass(1);
 	}
 }
 

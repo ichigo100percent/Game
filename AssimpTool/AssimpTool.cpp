@@ -31,19 +31,6 @@ void AssimpTool::Init()
 
 			// CustomData (File) -> Memory
 		}
-
-		{
-			shared_ptr<Converter> converter = make_shared<Converter>();
-
-			// FBX -> Memory
-			converter->ReadAssetFile(L"Ship/ship.FBX");
-
-			// Memory -> CustomData (File)
-			converter->ExportMaterialData(L"Ship/ship");
-			converter->ExportModelData(L"Ship/ship");
-
-			// CustomData (File) -> Memory
-		}
 	}
 }
 
