@@ -42,9 +42,9 @@ using namespace Microsoft::WRL;
 #include <Assimp\postprocess.h>
 
 // ImGUI
-#include "imgui.h"
-#include "imgui_impl_dx11.h"
-#include "imgui_impl_win32.h"
+//#include "imgui.h"
+//#include "imgui_impl_dx11.h"
+//#include "imgui_impl_win32.h"
 
 // Libs
 #pragma comment(lib, "d3d11.lib")
@@ -67,7 +67,7 @@ using namespace Microsoft::WRL;
 #include "TimeManager.h"
 #include "ResourceManager.h"
 #include "RenderManager.h"
-#include "ImGuiManager.h"
+//#include "ImGuiManager.h"
 
 // Engine
 #include "VertexData.h"

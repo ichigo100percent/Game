@@ -24,6 +24,9 @@ private:
 	string WriteTexture(string saveFolder, string file);
 
 private:
+	uint32 GetBoneIndex(const string& name);
+
+private:
 	wstring _assetPath = L"../Resources/Assets/";
 	wstring _modelPath = L"../Resources/Models/";
 	wstring _texturePath = L"../Resources/Textures/";
