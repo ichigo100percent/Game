@@ -3,11 +3,12 @@
 #include "Engine\Game.h"
 #include "AssimpTool.h"
 #include "StaticMeshDemo.h"
+#include "ImGuiDemo.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
 	GameDesc desc;
-	desc.appName = L"GameCoding";
+	desc.appName = L"Game";
 	desc.hInstance = hInstance;
 	desc.vsync = false;
 	desc.hWnd = NULL;
@@ -15,7 +16,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	desc.height = 600;
 	desc.clearColor = Color(0.5f, 0.5f, 0.5f, 0.5f);
 	//desc.app = make_shared<AssimpTool>();
-	desc.app = make_shared<StaticMeshDemo>();
+	//desc.app = make_shared<StaticMeshDemo>();
+	desc.app = make_shared<ImGuiDemo>();
 
 	GAME->Run(desc);
 

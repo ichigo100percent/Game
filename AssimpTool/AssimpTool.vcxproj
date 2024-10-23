@@ -23,6 +23,7 @@
     <ClInclude Include="AsTypes.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="Converter.h" />
+    <ClInclude Include="ImGuiDemo.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="StaticMeshDemo.h" />
@@ -32,6 +33,7 @@
     <ClCompile Include="AsTypes.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="ImGuiDemo.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

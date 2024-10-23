@@ -42,7 +42,7 @@ void CameraScript::Update()
 	if (INPUT->GetButton(KEY_TYPE::Z))
 	{
 		Vector3 rotation = GetTransform()->GetLocalRotation();
-		rotation.y += dt * 0.5f;
+		rotation.z += dt * 0.5f;
 		GetTransform()->SetLocalRotation(rotation);
 	}
 

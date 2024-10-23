@@ -15,5 +15,7 @@ private:
 	shared_ptr<Shader> _shader;
 	shared_ptr<GameObject> _obj;
 	shared_ptr<GameObject> _camera;
+
+	bool _check = false;
 };
 

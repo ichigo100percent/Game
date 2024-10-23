@@ -44,6 +44,27 @@ void StaticMeshDemo::Update()
 	{
 		_obj->Update();
 	}
+
+	{
+
+		if (INPUT->GetButton(KEY_TYPE::KEY_1))
+		{
+			_check = true;
+		}
+		else if (INPUT->GetButton(KEY_TYPE::KEY_2))
+		{
+			_check = false;
+		}
+
+		if (!_check)
+		{
+			_obj->GetModelRenderer()->SetPass(0);
+		}
+		else
+		{
+			_obj->GetModelRenderer()->SetPass(1);
+		}
+	}
 }
 
 void StaticMeshDemo::Render()
@@ -68,7 +89,7 @@ void StaticMeshDemo::CreateTower()
 	_obj->AddComponent(make_shared<ModelRenderer>(_shader));
 	{
 		_obj->GetModelRenderer()->SetModel(m1);
-		//_obj->GetModelRenderer()->SetPass(1);
+		//_obj->GetModelRenderer()->SetPass(0);
 	}
 }
 
